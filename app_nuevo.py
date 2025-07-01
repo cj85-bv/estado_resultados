@@ -12,7 +12,7 @@ import requests
 DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1388850101132460134/FRr5HYdbkxaEsapN5eMvjgcxhlx0H750D2x-vLWHSZ4z5qTMTrheb4las0nSaHVmmJXB"
 
 st.set_page_config(page_title="📊 Estado de Resultados", layout="centered")
-st.image("logo.png.png", width=120)
+st.image("logo.png", width=120)
 st.title("📊 Estado de Resultados por Cliente")
 
 # 🔐 Mapa de contraseñas por cliente (NIT como contraseña)
