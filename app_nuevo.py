@@ -1,4 +1,3 @@
-
 import streamlit as st
 import sqlite3
 import pandas as pd
@@ -23,6 +22,11 @@ USUARIOS = {
 }
 
 def cargar_datos():
+    # Mostrar información de depuración para verificar si el archivo existe
+    st.info("📁 Buscando archivo: dian.db")
+    st.info("📁 Directorio actual: " + os.getcwd())
+    st.info("📁 Archivos en el directorio: " + ", ".join(os.listdir()))
+
     conn = sqlite3.connect("dian.db")
     df = pd.read_sql_query("SELECT * FROM estado_resultados", conn)
     conn.close()
